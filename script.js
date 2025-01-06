@@ -1,3 +1,4 @@
-window.onload( () => {
-    alert ("sosal!");
-});
+function sosal() {
+    alert ('lol');
+}
+window.onload = sosal();
