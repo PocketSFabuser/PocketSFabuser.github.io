@@ -6,3 +6,52 @@
     font-style: 'Segoe UI';
     
 }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh; /* Занимает всю высоту экрана */
+                margin: 0;
+                background-color: #2b2b2b;
+            }
+
+            /* Стили для контейнера с элементами */
+            .auth {
+                background-color: rgba(87, 87, 87, 0.63);
+                text-align: center;
+                padding: 20px;
+                border-radius: 10px;
+                width: 300px; /* Фиксированная ширина контейнера */
+            }
+
+            /* Стили для заголовка */
+            .auth h1 {
+                font-size: 25px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin-bottom: 20px; /* Отступ снизу */
+            }
+
+            /* Стили для полей ввода и кнопки */
+            .auth input,
+            .auth button {
+                width: 80%; /* Занимают всю ширину контейнера */
+                padding: 10px;
+                margin-bottom: 10px; /* Отступ между элементами */
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                margin-right: px;
+            }
+
+            /* Стили для кнопки */
+            .auth button {
+                background-color: #4CAF50; /* Зеленый цвет */
+                color: white;
+                cursor: pointer;
+            }
+
+            .auth button:hover {
+                background-color: #45a049; /* Темно-зеленый при наведении */
+            }
+            .auth input {
+                background-color: #2b2b2b;
+            }
