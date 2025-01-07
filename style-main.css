@@ -27,7 +27,7 @@ button:hover {
     cursor: pointer;
 }
 #sf1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('sfimg.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('sfimg.webp');
     background-size: cover;
 }
 .head h1 {
