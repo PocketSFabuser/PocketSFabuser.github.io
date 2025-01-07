@@ -13,6 +13,7 @@ function main() {
         window.close();
     })
 }
+// sosali or what. hello richard sorry to do it to you. lol
 
 
 
