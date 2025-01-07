@@ -1,0 +1,43 @@
+.head {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: 'Segoe UI';
+    color: aliceblue;
+    margin: 15px;
+    background-color: rgb(31, 31, 31);
+}
+button {
+    color: antiquewhite;
+    font-size: 30px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.8px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: hidden;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: Arial;
+    width: 300px;
+    height: 120px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+button:hover {
+    cursor: pointer;
+}
+#sf1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('sfimg.jpg');
+    background-size: cover;
+}
+.head h1 {
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.5px;
+}
+body {
+    background-color: rgb(34, 34, 34);
+}
+#luna1 {
+    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Luna_icon.webp');
+}
