@@ -2,9 +2,40 @@
 <html>
     <head>
         <meta charset="UTF-8" lang="ru">
-        <title> At work </title>
+        <title> Luna </title>
+        <link rel="stylesheet" href="luna-style.css">
+        <link rel="stylesheet" href="luna-style.css" media="screen and (min-width:768px)">
+        <link rel="stylesheet" href="luna-mobile.css" media="screen and (max-width:767px)">
     </head>
     <body>
-        Page at work
+        <div class="container"> 
+            <img src="luna.png" id="luna">
+            <div class="head">
+                 Luna 
+                 <img src="agility.png" id="agility">
+            </div>
+
+            <div class="about">
+                Luna быстро врывается в битву, кромсая противника своими отскакивающими атаками. Если враги идут в наступление, она призывает на помощь силу Луны и сокрушает их жгучим лучом или лунным градом.
+            </div>
+            <div class="stata">
+                <dt>
+                    <dl>
+                        <img src="luna-stats.png" id="stat">
+                    </dl>
+                    <dl>
+                        <img src="luna-roles.png" id="role">
+                    </dl>
+                </dt>
+            </div>
+            <div class="down">
+                <button id="more"> Больше </button>
+            </div>
+        </div>
+        <script>
+            window.addEventListener('resize', loadStylesheet);
+            loadStylesheet();
+        </script>
+        <script src="luna.js" type="text/javascript"></script>
     </body>
 </html>
