@@ -96,10 +96,10 @@
         function main() {
             sry.addEventListener('click', () => {
                 document.getElementById('lol').style.display = 'none';
-                document.getElementbyId('popa').style.display = 'block';
                 vvod.style.display="block";
                 sry.style.display="none";
                 cnt.style.display='block';
+                document.getElementById('popa').style.display = 'none';
                 cnt.addEventListener('click', () => {
                     document.getElementById('twxt').style.display = 'block'
                     document.getElementById('error').style.display = 'block';
@@ -109,9 +109,7 @@
             });
             
         }
-
         window.onload = main();
-
     </script>
 </body>
 </html>
