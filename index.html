@@ -68,6 +68,9 @@
             position: flex;
             text-align: center;
         }
+        #popa {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -75,6 +78,7 @@
         <h1 id ="lol"> Нажмите кнопку чтобы получить извенения. </h1>
         <h2 id="error"> Ошибка! </h2>
         <h3 id="twxt"> Причина слишком незначительна </h3>
+        <h4 id="popa"> Введите причину для извенений! </h4>
         <button id="sorry">
             Получить извенения
         </button>
@@ -91,11 +95,12 @@
 
         function main() {
             sry.addEventListener('click', () => {
+                document.getElementById('lol').style.display = 'none';
+                document.getelementbyid('popa').style.display = 'block';
                 vvod.style.display="block";
                 sry.style.display="none";
                 cnt.style.display='block';
                 cnt.addEventListener('click', () => {
-                    document.getElementById('lol').style.display = 'none';
                     document.getElementById('twxt').style.display = 'block'
                     document.getElementById('error').style.display = 'block';
                     vvod.style.display = 'none';
