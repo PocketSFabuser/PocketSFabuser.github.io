@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" lang="ru">
+    <title> извенения дон </title>
+    <style>
+        .hide_vvod {
+            display: flex;
+            display: none;
+            text-align: center;
+        }
+        body {
+            background-color: grey;
+            color: aliceblue;
+            -webkit-text-stroke-color: black;
+            -webkit-text-stroke-width: 0.2px;
+            text-align: center;
+            margin: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: 'Segoe UI';
+            font-size: 30px;
+        }
+        .main {
+            margin-top: 500px;
+            margin-left: 75px;
+            text-align: center;
+            padding-bottom: 50px;
+            width: 700px;
+            height: auto;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding: 20px;
+            background-color: rgb(80, 80, 80);
+        }
+        button {
+            color: aliceblue;
+            padding: 30px;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: 'Segoe UI';
+            border: hidden;
+            border-radius: 5px;
+            background-color: rgb(83, 83, 83);
+        }
+        button:hover {
+            cursor: pointer;
+        }
+        #input1 {
+            color: aliceblue;
+            background-color: grey;
+            text-align: center;
+            width: auto;
+            height: 50px;
+        }
+        #twxt {
+            display: none;
+        }
+        #continue {
+            margin-top: 20px;
+            text-align: center;
+            display: none;
+        }
+        #error {
+            display: none;
+        }
+        .inputcnt {
+            color:aliceblue;
+            position: flex;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1 id ="lol"> Нажмите кнопку чтобы получить извенения. </h1>
+        <h2 id="error"> Ошибка! </h2>
+        <h3 id="twxt"> Причина слишком незначительна </h3>
+        <button id="sorry">
+            Получить извенения
+        </button>
+        <div class="inputcnt">
+        <input id="input1" class="hide_vvod" type="text" maxlength="15" name="Ввод" placeholder="Введите причину"> 
+        <button id="continue"> Отправить причину </button>
+        </div>
+    </div>
+    <script>
+        const sry = document.getElementById('sorry');
+        const vvod = document.getElementById('input1');
+        const cnt = document.getElementById('continue');
+
+
+        function main() {
+            sry.addEventListener('click', () => {
+                vvod.style.display="block";
+                sry.style.display="none";
+                cnt.style.display='block';
+                cnt.addEventListener('click', () => {
+                    document.getElementById('lol').style.display = 'none';
+                    document.getElementById('twxt').style.display = 'block'
+                    document.getElementById('error').style.display = 'block';
+                    vvod.style.display = 'none';
+                    cnt.style.display = 'none';
+                });
+            });
+            
+        }
+
+        window.onload = main();
+
+    </script>
+</body>
+</html>
