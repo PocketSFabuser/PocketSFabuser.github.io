@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset= "UTF-8" lang= "ru">
+        <title> Поставьте 10! </title>
+        <style>
+            body {
+                background-color: grey;
+            }
+            button {
+                color: white;
+                -webkit-text-stroke-color: black;
+                -webkit-text-stroke-width: 0.2mm;
+                border: hidden;
+                border-radius: 5px;
+                background-color: rgb(109, 109, 109);
+                padding: 10px;
+                margin: 20px;
+                font-size: 30px;
+            }
+            .container {
+                color: aliceblue;
+                -webkit-text-stroke-color: black;
+                -webkit-text-stroke-width: 0.5mm;
+                text-align: center;
+                margin: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-style: Arial;
+                font-size: 40px;
+            }
+            button:hover {
+                cursor: pointer;
+                background-color: rgb(82, 82, 82);
+            }
+            #Z2 {
+                display: none;
+            }
+            #input {
+                margin-left: 20px;
+                background-color: rgb(65, 65, 65);
+                width: 500px;
+                height: 200px;
+                font-size: 30px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="start">
+                <h1 id="Zagolovok">
+                    Нажмите на эту кнопку, и случится чудо
+                </h1>
+                <button id="btn"> Нажмите сюда </button>
+                <h2 id="Zagol2"> 
+                    Поставьте 10, пожалуйста!
+                </h2>
+                <div class="rofli">
+                <h3 id="52">
+                    Если вы не хотите ставить 10, то укажите причину в поле ниже
+                </h3>
+                <input id="input" type="text" placeholder="Причина">
+                <button id="btn2"> Отправить </button>
+                <h4 id="42">
+                    Ошибка: причина слишком незначительна!
+                </h4>
+                </div>
+            </div>
+        </div>
+        <script>
+            const z1 = document.getElementById('Zagolovok');
+            const z2 = document.getElementById('Zagol2');
+            const but = document.getElementById('btn');
+            const input = document.getElementById('input');
+            const ft = document.getElementById('42');
+            const btn2 = document.getElementById('btn2');
+            const rofl = document.getElementById('52');
+            
+
+            window.onload = () => {
+                z2.style.display = 'none';
+                rofl.style.display = 'none';
+                ft.style.display = 'none';
+                btn2.style.display = 'none';
+                input.style.display = 'none';
+            }, main();
+            
+            function main() {
+                but.addEventListener ('click', () => {
+                    z1.style.display = 'none';
+                    z2.style.display = 'block';
+                    but.style.display = 'none';
+                    rofl.style.display = 'block';
+                    input.style.display = 'block';
+                    btn2.style.display = 'block'
+                });
+                btn2.addEventListener('click', () => {
+                    ft.style.display = 'block';
+                    z1.style.display = 'none';
+                    z2.style.display = 'none';
+                    but.style.display = 'none';
+                    rofl.style.display = 'none';
+                    input.style.display = 'none';
+                    btn2.style.display = 'none';
+                });
+            }
+        </script>
+    </body>
+</html>
