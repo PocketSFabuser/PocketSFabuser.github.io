@@ -37,7 +37,7 @@ body {
 }
 #luna {
     float: right;
-    width: 700px;
+    width: auto;
     height: auto;
     margin-right: 2%;
     padding: 20px;
