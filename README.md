@@ -3,4 +3,4 @@ here i trying made simple site and host it on github pages to check it on phone 
 
 i learn CSS and JS to be a front-end developer
 
-Day 5
+
