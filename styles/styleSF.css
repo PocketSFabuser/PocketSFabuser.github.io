@@ -1,0 +1,76 @@
+.sf {
+    float: right;
+    background-color: rgba(85, 0, 0, 0.329);
+    border-radius: 40px;
+    margin-top: -50px;
+    animation-name: sf-vilet;
+    animation-duration: 0.5s;
+}
+body {
+    margin: 20px;
+    color: white;
+    background-color: rgb(31, 5, 10);
+}
+.lolkek {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: 'Segoe UI';
+    font-size: 25px;
+}
+#agilityimg {
+    margin-top: 10px;
+}
+.lolkek {
+    margin: 5px;
+    margin-right: 25px;
+    animation-name: based-vilet;
+    animation-duration: 0.5s;
+}
+.eba {
+    font-family:'Times New Roman', Times, serif;
+    font-style: 'serif';
+}
+@keyframes sf-vilet {
+    from {
+        width: 0px;
+        height: auto;
+    }
+    to {
+       width: 500px;
+       height: auto;
+    }
+}
+@keyframes based-vilet {
+    from {
+        margin-left: -100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+.ebat {
+    margin-left: 17%;
+}
+#stats {
+    margin: 30px;
+    border-radius: 20px;
+    background-color: rgba(82, 82, 82, 0.473);
+}
+.statistics {
+    animation-name: based-vilet;
+    animation-duration: 0.5s;
+    padding-top: 15px;
+    background-color: rgba(82, 82, 82, 0.473);
+    border-radius: 20px;
+    font-size: 25px;
+    margin-top: 12%;
+    text-align: center;
+    margin-bottom: 120px;
+}
+.pics {
+    border-radius: 20px;
+    background-color: rgba(82, 82, 82, 0.473);
+    text-align: center;
+    padding: 30px;
+    
+}
+

@@ -1,0 +1,85 @@
+body {
+    background-color: rgb(29, 29, 29);
+    margin: 30px;
+}
+.head {
+    min-width: 120px;
+    padding: 10px;
+    color: azure;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.3mm;
+    background-color: rgb(53, 53, 53);
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: 'Segoe UI';
+    margin: 20px;
+    border-radius: 10px;
+    width: 12%;
+    text-align: center;
+}
+.about {
+    color: azure;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.1mm;
+    background-color: rgb(53, 53, 53);
+    font-size: 25px;
+    width: 400px;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+.stata {
+    background-color: rgb(53, 53, 53);
+    padding: 10px;
+    border-radius: 10px;
+    width: 500px;
+    margin-top: 20px;
+}
+#luna {
+    float: right;
+    width: 100px;
+    height: auto;
+    margin-right: 2%;
+    padding: 20px;
+    background-color: rgb(53, 53, 53);
+    border-radius: 10px;
+}
+.container {
+    background-color: rgb(39, 39, 39);
+    padding: 20px;
+    border-radius: 10px;
+}
+#more {
+    margin-top: 25px;
+    text-align: center;
+    border: 1px;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-left: 43%;
+    padding: 20px;
+    width: 200px;
+    height: auto;
+    color: antiquewhite;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.2px;
+}
+button {
+    background-color: dimgray;
+}
+button:hover  {
+    cursor: pointer;
+    animation-name: button-hover;
+    animation-duration: 200s;
+    background-color: rgb(53, 53, 53);
+}
+@keyframes button-hover {
+    from {
+        background-color: dimgray;
+    }
+    1% {
+        background-color: rgb(63, 63, 63);
+    }
+    to {
+        background-color: rgb(63, 63, 63);
+    }
+}

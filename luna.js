@@ -9,11 +9,3 @@ btn.addEventListener('click', () => {
 } );
 
 }
-
-boolean sosal = true;
-
-if ( sosal != false && 2 + 2 = 4 ) {
-    console.log ('Z");
-} else {
-    console.log ('kak ebat?!");
-}
